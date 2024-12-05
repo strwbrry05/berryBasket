@@ -30,14 +30,7 @@
     --smaller-size: 0.5rem;
 }
 
-/*prevents horizontal scrolling on moble*/
-html, body {
-    overflow-x: hidden;
-}
-body {
-    position: relative
-}
-/*#################################*/
+
 
 body {
     font-family: var(--font-normal);
@@ -178,6 +171,16 @@ body {
     background: var(--gray-color);
 }
 
+@media (max-width:549px) {
+    /*prevents horizontal scrolling on moble*/
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    /*#################################*/
+}
 
 @media (min-width:550px) {
     /*###################
