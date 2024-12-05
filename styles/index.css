@@ -30,6 +30,15 @@
     --smaller-size: 0.5rem;
 }
 
+/*prevents horizontal scrolling on moble*/
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative
+}
+/*#################################*/
+
 body {
     font-family: var(--font-normal);
     font-weight: var(--weight-normal);
@@ -93,7 +102,7 @@ body {
     opacity: .30;
  }
 .hero-img img {
-    max-width: 800px;
+    width: 800px;
 }
 
 .hero-text {
