@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red-color: #8C3830;
+    --pink-color: #E1B1A3;
+    --lightGray-color: #F4F3EE;
+    --gray-color: #D0CDC8;
+    --brown-color: #433C38;
+    --black-color: #151313;
+    --white-color: #FFF;
+
+    --font-header: "Oswald", sans-serif;
+    --font-normal: "Ubuntu", sans-serif;
+    
+    --weight-normal: 500;
+    --weight-bold: 600;
+    --weight-bolder:700;
+
+    --title-size: 2.25rem;
+    --heading-size: 1.5rem;
+    --aboveNormal-size: 1.25rem;
+    --normal-size: 1rem;
+    --small-size: 0.75rem;
+    --smaller-size: 0.5rem;
+}
+
+body {
+    font-family: var(--font-normal);
+    font-weight: var(--weight-normal);
+    font-size: var(--normal-size);
+}
+
+/*###################
+    HEADER
+######################*/
+.nav-title {
+    font-family: var(--font-header);
+    font-size: var(--title-size);
+    font-weight: var(--weight-bolder);
+    letter-spacing: -2px;
+    margin-bottom: 0.25em;
+    padding-top: 0.5em;
+
+    color: var(--lightGray-color);
+}
+
+.nav {
+    background: var(--red-color);
+    border-radius: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    width: 90%;
+}
+.nav-links-list {
+    list-style: none;
+    font-weight: var(--weight-bolder);
+    padding-bottom: 0.75em;
+}
+.nav-links-list a {
+    color: var(--lightGray-color);
+    text-decoration: none;
+}
+.nav-links-list li {
+    margin-bottom: 0.5em;
+}
+.nav-links-list a:hover {
+    color: var(--pink-color);
+    text-decoration: underline;
+}
+
+/*###################
+    FEATURED SECTION
+######################*/
+
+.featured-section {
+    background: var(--gray-color);
+}
+
+
+@media (min-width:550px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 97%;
+        border-radius: 30px;
+
+    }
+    .nav-title {
+        margin-top: 0;
+        margin-bottom: 0.15em;
+        padding-top: 0;
+        /* background-color: pink; */
+        margin-left: 1.5em;
+        letter-spacing: -1px;
+        font-size: var(--heading-size);
+    }
+    .nav-links-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0 2em;
+        padding-bottom: 0;
+
+        list-style-type: none;
+    }
+    .nav-links-list li {
+        margin-bottom: 0;
+        margin-left: 1em;
+    }
+
+    /*###################
+        HEADER
+    ######################*/
+    /*
+
+    .nav-links-list {
+        list-style: none;
+        font-weight: var(--weight-bolder);
+        padding-bottom: 0.75em;
+    }
+    .nav-links-list a {
+        color: var(--lightGray-color);
+        text-decoration: none;
+    }
+    .nav-links-list li {
+        margin-bottom: 0.5em;
+    }
+    .nav-links-list a:hover {
+        color: var(--pink-color);
+        text-decoration: none;
+    } */
+}
