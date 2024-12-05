@@ -139,7 +139,6 @@ body {
     color: var(--brown-color);
 
     margin-top: 1.25em;
-    width: 90%;
 }
 .hero-text-btn {
     grid-column: 1/4;
