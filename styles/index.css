@@ -24,7 +24,7 @@
 
     --title-size: 2.5rem;
     --heading-size: 2.25rem;
-    --aboveNormal-size: 1.25rem;
+    --aboveNormal-size: 1.15rem;
     --normal-size: 1rem;
     --small-size: 0.75rem;
     --smaller-size: 0.5rem;
@@ -196,6 +196,74 @@ body {
 /*###################
     MAIN SECTION
 ######################*/
+.main-section {
+    padding: 1em;
+    padding-top: 2em;
+}
+.main-group-text {
+    color: var(--brown-color);
+    font-family: var(--font-header);
+    font-size: var(--heading-size);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.main-group-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-item-card {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    width: 135px;
+    margin: 0 1em;
+    margin-bottom: 1.5em;
+}
+
+.main-item-card img {
+    width: 115px;
+    margin-bottom: 1em;
+    margin: 0 auto;
+    padding: 0.5em;
+
+    border-radius: 15px;
+    border: 3px solid var(--brown-color);
+}
+.main-item-card img:hover {
+    opacity: 0.75;
+    background: var(--gray-color);
+    border: 3px solid var(--red-color);
+    cursor: pointer;
+}
+
+.item-card-name {
+    font-weight: var(--weight-bolder);
+    font-size: var(--aboveNormal-size);
+    color: var(--red-color);
+    border-radius: 15px;
+    margin: 0.25em 0;
+}
+.item-card-price {
+    font-weight: var(--weight-bold);
+    color: var(--brown-color);
+}
+
+.main-group-btn-mobile {
+    background-color: var(--red-color);
+    padding: 0.5em 2em;
+    color: var(--white-color);
+    border-radius: 15px;
+    text-decoration: none;
+
+    font-size: var(--aboveNormal-size);
+    margin-bottom: 2em;
+}
 
 /*###################
     QUOTE SECTION
@@ -421,6 +489,9 @@ body {
     /*###################
         MAIN SECTION
     ######################*/
+    .main-group-btn-mobile {
+        display: none;
+    }
 
     /*###################
         QUOTE SECTION
@@ -433,11 +504,9 @@ body {
         display: flex;
         flex-direction: row-reverse;
     }
-
      .bigTicket-section {
         background: white;
     }
-
      .bigTicket-img {
         padding: 2em 0;
         width: 50%;
@@ -456,26 +525,26 @@ body {
     
         margin-left: 0;
         margin-top: 0;
-        /* padding: 3em; */
         margin: 3em 2em;
-        background-color: palegoldenrod;
     }
-    
-    
     .bigTicket-text-title {
         text-align: center;
         font-size: 4rem;
 
         margin-top: 0;
+        margin-bottom: 0.25em;
     }
     .bigTicket-text-price {
         margin-bottom: 0;
+        margin-top:0.5em;
         font-size: var(--aboveNormal-size);
 
     
     } 
     .bigTicket-text-subtitle {
         margin-bottom: 0;
+        margin: 1em auto;
+        width: 60%;
         font-size: var(--aboveNormal-size);
     }
     
@@ -487,8 +556,7 @@ body {
         text-decoration: none;
     
         margin-top: 0;
-    
-        font-weight: 700;
+        margin-top: 1em;
     }
     .bigTicket-text-btn:hover {
         color: var(--white-color);
