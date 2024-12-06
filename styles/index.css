@@ -92,7 +92,7 @@ body {
 ######################*/
  .hero {
     margin: 0 auto;
-    margin-top: 11em;
+    margin-top: 15em;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3, 1fr);

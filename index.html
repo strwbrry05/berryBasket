@@ -19,15 +19,16 @@
 
     <title>berry basket</title>
   </head>
-  <body>
+  <body id="hero">
     <header>
       <nav class="nav">
         <div class="nav-title">berry basket!</div>
         <div class="nav-links">
           <ul class="nav-links-list">
-            <li><a href="">featured</a></li>
-            <li><a href=""> all_items</a></li>
-            <li><a href="">big_ticket_item</a></li>
+            <li><a href="#hero">home</a></li>
+            <li><a href="#featured">featured</a></li>
+            <li><a href="#items"> all_items</a></li>
+            <li><a href="#bigTicket">big_ticket_item</a></li>
           </ul>
         </div>
       </nav>
@@ -47,7 +48,7 @@
       </div>
     </header>
 
-    <section class="featured-section">
+    <section id="featured" class="featured-section">
       <div class="featured-title">featured items</div>
 
       <div class="cards">
@@ -113,7 +114,7 @@
       </div>
     </section>
 
-    <section class="main-section">
+    <section id="items" class="main-section">
       <div class="main-group">
         <p class="main-group-text">Section 1</p>
         <div class="main-group-cards">
@@ -409,7 +410,7 @@
       </div>
     </section>
 
-    <section class="bigTicket-section">
+    <section id="bigTicket" class="bigTicket-section">
       <div class="bigTicket-img">
         <img src="assets/bigTicketItem.PNG" alt="" />
       </div>
