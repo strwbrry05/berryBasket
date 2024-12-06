@@ -200,6 +200,9 @@ body {
 /*###################
     QUOTE SECTION
 ######################*/
+.quote-section {
+    background: var(--pink-color);
+}
 
 /*###################
     BIG TICKET SECTION
@@ -402,8 +405,17 @@ body {
 
         min-width: 80%;
     }
-    .featured-card {
+    .featured-card-img img {
+        width: 150px;
+    }
+    .featured-card-text {
         margin-left: 1em;
+    }
+    .featured-card {
+        margin-left: 0;
+        margin-right: 1em;
+        width: 200px;
+        /* background-color: #c78c69; */
     }
 
     /*###################
@@ -419,7 +431,69 @@ body {
     ######################*/
     .bigTicket-section {
         display: flex;
+        flex-direction: row-reverse;
     }
+
+     .bigTicket-section {
+        background: white;
+    }
+
+     .bigTicket-img {
+        padding: 2em 0;
+        width: 50%;
+    }
+    .bigTicket-img img {
+        width: 275px;
+    }
+    
+    
+    .bigTicket-text {
+        color: var(--brown-color);
+        font-weight: var(--weight-bold);
+
+        width: 45%;
+        display: block;
+    
+        margin-left: 0;
+        margin-top: 0;
+        /* padding: 3em; */
+        margin: 3em 2em;
+        background-color: palegoldenrod;
+    }
+    
+    
+    .bigTicket-text-title {
+        text-align: center;
+        font-size: 4rem;
+
+        margin-top: 0;
+    }
+    .bigTicket-text-price {
+        margin-bottom: 0;
+        font-size: var(--aboveNormal-size);
+
+    
+    } 
+    .bigTicket-text-subtitle {
+        margin-bottom: 0;
+        font-size: var(--aboveNormal-size);
+    }
+    
+    .bigTicket-text-btn {
+        background: var(--pink-color);
+        color: var(--red-color);
+        padding: 0.5em 2em;
+        border-radius: 15px;
+        text-decoration: none;
+    
+        margin-top: 0;
+    
+        font-weight: 700;
+    }
+    .bigTicket-text-btn:hover {
+        color: var(--white-color);
+        background: var(--gray-color);
+    } 
 
     /*###################
         FOOTER
