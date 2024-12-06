@@ -227,11 +227,6 @@ body {
     border: 5px solid var(--pink-color);
     width: 300px;
 }
-.bigTicket-img img:hover {
-    border: 7px solid var(--brown-color);
-    opacity: 75%;
-    cursor: pointer;
-}
 
 .bigTicket-text {
     color: var(--white-color);
@@ -287,7 +282,7 @@ body {
     border-radius: 15px;
     text-decoration: none;
 
-    margin-top: 1em;
+    margin-top: 2em;
 
     font-weight: 700;
 }
@@ -296,16 +291,17 @@ body {
     background: var(--gray-color);
 }
 
-
-
-
-
-
 /*###################
     FOOTER
 ######################*/
 .footer {
-    background: var(--gray-color)
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+    background: var(--gray-color);
+    font-size: var(--small-size);
+    font-weight: var(--weight-bolder);
+    color: var(--red-color);
 }
 
 
