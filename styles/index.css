@@ -302,6 +302,8 @@ body {
     font-size: var(--small-size);
     font-weight: var(--weight-bolder);
     color: var(--red-color);
+
+    margin-bottom: 1em;
 }
 
 
